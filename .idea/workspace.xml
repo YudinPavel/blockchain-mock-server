@@ -10,8 +10,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4251b636-90a1-44b8-b0db-2b442846462f" name="Default Changelist" comment="delete node_modules">
+    <list default="true" id="4251b636-90a1-44b8-b0db-2b442846462f" name="Default Changelist" comment="add script run">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/document_1.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +45,7 @@
       <updated>1589634326719</updated>
       <workItem from="1589634328009" duration="1000" />
       <workItem from="1591417113614" duration="2691000" />
+      <workItem from="1591661569791" duration="673000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1591417216837</created>
@@ -59,7 +61,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591417413375</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add script run">
+      <created>1591661604429</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1591661604429</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -75,11 +84,13 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first" />
     <MESSAGE value="delete node_modules" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete node_modules" />
+    <MESSAGE value="add script run" />
+    <option name="LAST_COMMIT_MESSAGE" value="add script run" />
   </component>
   <component name="WindowStateProjectService">
     <state x="568" y="227" width="527" height="274" key="#Notifications" timestamp="1591417276877">
@@ -90,9 +101,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="485" y="84" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1591417164473" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1591417414651">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1591661606325">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1591417414651" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1591661606325" />
   </component>
 </project>
