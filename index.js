@@ -21,6 +21,136 @@ const multiparty = require('multiparty');
 let files = [];
 let filesIds = 0;
 
+let mockFile = {
+    regulations: [],
+    id: 0,
+    theme: "Описание S.M.A.R.T",
+    name: "Лабораторная работа №1",
+    content: [
+        [
+            {
+                font_size: "14",
+                text_align: 'center',
+                isBold: false,
+                isCursive: false,
+                text: "НИЖЕГОРОДСКИЙ ГОСУДАРСТВЕННЫЙ ТЕХНИЧЕСКИЙ УНИВЕРСИТЕТ \n" +
+                    "\tим. Р. Е. Алексеева»\t\n\n" +
+                    "\n"
+            },
+            {
+                font_size: "14",
+                text_align: 'center',
+                isBold: false,
+                isCursive: false,
+                text: "Институт Радиоэлектроники и Информационных Технологий\n" +
+                    "Кафедра \"Вычислительные системы и технологии\"\n" +
+                    "\n" +
+                    "\n" +
+                    "\n" +
+                    "\n" +
+                    "\n"
+            },
+            {
+                font_size: "14",
+                text_align: 'center',
+                font_weight: 'bold',
+                isCursive: false,
+                text: "Отчёт по лабораторной работе №1\n" +
+                    " по дисциплине «Системы хранения данных»\n" +
+                    "\n"
+            },
+            {
+                font_size: "14",
+                text_align: 'center',
+                font_weight: 'normal',
+                isCursive: false,
+                text: "Знакомство с технологией S.M.A.R.T.\n" +
+                    "\n" +
+                    "\n" +
+                    "\n" +
+                    "\n" +
+                    "\n"
+            },
+            {
+                font_size: "14",
+                text_align: "right",
+                font_weight: 'normal',
+                isCursive: false,
+                text: "Выполнил:\n" +
+                    "Юдин П.А.\n" +
+                    "\t\t\t\t\t\t\t\t\t Группа 16-В-1\n" +
+                    "\n"
+            },
+            {
+                font_size: "14",
+                text_align: "right",
+                font_weight: 'normal',
+                isCursive: false,
+                text: "Проверил:\n" +
+                    "Зеленский В. П.\n" +
+                    "\n" +
+                    "\t\t\t\t                   \t\t\n" +
+                    "\n" +
+                    "\n" +
+                    "\n" +
+                    "\n" +
+                    "\n" +
+                    "\n" +
+                    "\n" +
+                    "\n"
+            },
+            {
+                font_size: "14",
+                text_align: 'center',
+                font_weight: 'normal',
+                isCursive: false,
+                text: "Нижний Новгород\n" +
+                    " 2020 г.\n"
+            }
+        ],
+        [
+            {
+                font_size: "11",
+                text_align: "left",
+                font_weight: 'bold',
+                isCursive: false,
+                text: "Цель работы:",
+                childs: [
+                    {
+                        font_size: "11",
+                        text_align: "left",
+                        font_weight: 'normal',
+                        isCursive: false,
+                        text: "Изучить возможности и область применения технологии S.M.A.R.T. С помощью любого доступного ПО, " +
+                            "способного обрабатывать отчёты S.M.A.R.T, проверить состояние HDD (SSD) на домашнем компьютере."
+                    }
+                ]
+            },
+            {
+                font_size: "11",
+                text_align: "left",
+                font_weight: 'bold',
+                isCursive: false,
+                text: "Описание S.M.A.R.T:",
+                childs: [
+                    {
+                        text_align: "left",
+                        font_weight: 'normal',
+                        isCursive: false,
+                        font_size: "11",
+                        text: "S.M.A.R.T. (от англ. self-monitoring, analysis and reporting technology —" +
+                            " технология самоконтроля, анализа и отчётности) — технология оценки состояния жёсткого диска " +
+                            "встроенной аппаратурой самодиагностики, а также механизм" +
+                            " предсказания времени выхода его из строя.     \n" +
+                            "S.M.A.R.T. производит наблюдение за основными характеристиками накопителя, " +
+                            "каждая из которых получает оценку.\n"
+                    }
+                ]
+            },
+        ]
+    ]
+};
+
 let textSections = [
     {
         header: "История",
@@ -93,7 +223,7 @@ app.post("/addFile", (req, res, next) => {
 
             form.cle;
 
-            res.send(file);
+            res.send(mockFile);
             res.end();
         }, 100);
     })
